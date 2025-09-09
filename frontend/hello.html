@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata with Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #3dd60a;
+      margin: 0;
+      padding:20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 2000px;
+      margin: 0px auto;
+      padding:20px;
+      background-color: orangered;
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    h1 {
+      text-align:center;
+      color: #2c3e50;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 180px;
+      border-radius: 10px;
+      border: 3px solid #3498db;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 40px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background: #3498db;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Biodata</h1>
+    <img src="https://tse3.mm.bing.net/th/id/OIP.pHDLAOMIYFhkTgJX0P3IYQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3"
+         alt="Profile Picture">
+
+    <!-- Card: Basic Details -->
+    <div class="card">
+      <h2>Basic Details</h2>
+      <ul>
+        <li>Name: N. Latha</li>
+        <li>Place:Ananthapur</li>
+      </ul>
+    </div>
+
+    <!-- Card: Education -->
+    <div class="card">
+      <h2>Education Qualification</h2>
+      <ol>
+        <li>UG: B.Tech CSM</li>
+        <li>Intermediate: MPC</li>
+        <li>SSC</li>
+      </ol>
+    </div>
+
+    <!-- Card: Hobbies -->
+    <div class="card">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Reading books</li>
+        <li>Exploring new things</li>
+      </ul>
+    </div>
+
+    <!-- Card: Strengths -->
+    <div class="card">
+      <h2>Strengths</h2>
+      <ul>
+        <li>Hardworking</li>
+        <li>Smart Working</li>
+        <li>Positive Thinking</li>
+      </ul>
+    </div>
+
+    <!-- Card: Weakness -->
+    <div class="card">
+      <h2>Weakness</h2>
+      <ul>
+        <li>Concentrate on one thing at a time</li>
+      </ul>
+    </div>
+
+    <!-- Card: Academic Performance -->
+    <div class="card">
+      <h2>Academic Performance</h2>
+      <table>
+        <tr>
+          <th>Subject</th>
+          <th>CGPA</th>
+        </tr>
+        <tr>
+          <td>NLP</td>
+          <td>9.0</td>
+        </tr>
+        <tr>
+          <td>ENVC</td>
+          <td>9.0</td>
+        </tr>
+        <tr>
+          <td>EDAP</td>
+          <td>9.2</td>
+        </tr>
+        <tr>
+          <td>OSSP</td>
+          <td>8.8</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume with Cards</title>
+  <style>
+   
+     
+    
+    .container {
+      max-width: 800px;
+      margin: auto;
+      display:flex;
+      gap:20px;
+    }
+    .card {
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-tag {
+      background: #007bff;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <h1>John Doe</h1>
+      <p>Software Engineer | johndoe@email.com | +91-9876543210</p>
+    </div>
+
+    <div class="card">
+      <h2>Professional Summary</h2>
+      <p>Enthusiastic developer with 5+ years of experience in full-stack web development and cloud solutions.</p>
+    </div>
+
+    <div class="card">
+      <h2>Experience</h2>
+      <h3>Senior Developer - ABC Corp</h3>
+      <p>Jan 2020 – Present</p>
+      <ul>
+        <li>Built scalable web applications using React and Node.js</li>
+        <li>Led a team of 4 developers</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">AWS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p>B.Tech in Computer Science, XYZ University (2015–2019)</p>
+    </div>
+
+  </div>
+</body>
+</html>

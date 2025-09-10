@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Card and Container</title>
+  <style>
+    /* Container */
+    .container {
+      width: 80%;          /* takes 80% of the page width */
+      margin: 0 auto;      /* centers the container */
+      display: flex;       /* places cards in a row */
+      gap: 20px;           /* space between cards */
+    }
+
+    /* Card */
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">My Cards</h2>
+
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Image 1">
+      <h3>Card 1</h3>
+      <p>Some text here.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Image 2">
+      <h3>Card 2</h3>
+      <p>Some text here.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Image 3">
+      <h3>Card 3</h3>
+      <p>Some text here.</p>
+    </div>
+  </div>
+
+</body>
+</html>

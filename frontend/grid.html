@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
     <head>
         <title>
@@ -62,4 +63,70 @@
         </div>
         
     </body>
+=======
+<html>
+    <head>
+        <title>
+            <h1>Student Registration Form</h1>
+        </title>
+        <style>
+            .temp{
+                border: 2px solid black;
+            width: 30%;
+            /*margin-left: 35%;*/
+            margin-top: 5%;
+            padding: 30px;
+            background-color: lightgrey;
+        }
+        .temp h1{
+            text-align:center;
+            color:plum;
+        }
+
+            
+            .form{
+                display:grid;
+                grid-template-columns: 1fr 2fr;
+                grid-gap:5px;
+            }
+            button{
+                grid-column:span 2;
+            }
+        </style>
+
+
+    </head>
+    <body>
+            <div class="temp">
+                <h1>Student Registration Form</h1>
+            <form class="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="usn">USN</label>
+                <input type="text" id="usn" name="usn" placeholder="USN">
+                <label for="gender">Gender</label><br>
+
+            <input type="radio" id="male" name="gender" value="Male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+            <label for ="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="phone">
+            <label for="Hobbies">Hobbies</label>
+            <input type="hobbies" id="Hobbies" name="hobbies" placeholder="Hobbies">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password"><br>
+            <label for="event">Events</label>
+            <input type="checkbox" id="essay-writing" name="event" value="essay-writing">essay-writing
+            <input type="checkbox" id="debate" name="event" value="debate">debate
+            <input type="checkbox" id="quiz" name="event" value="quiz">quiz
+            <input type="checkbox" id="speech" name="event" value="speech">speech
+            <button type="register" value="register">Register</button>
+ 
+
+            </form>
+        </div>
+        
+    </body>
+>>>>>>> 0d73a2f7227ce74aa833edd99cac9996fa997bcc
 </html>

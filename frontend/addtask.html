@@ -1,0 +1,160 @@
+<html>
+<title>To do list</title>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="temp">
+
+    <h2>To-Do List App (jQuery)</h2>
+
+
+  <input type="text"
+id="taskInput" placeholder="Enter a task">
+
+
+  <button id="addBtn">Add
+Task</button>
+
+
+ 
+
+
+  <ul id="taskList"></ul>
+  <li>Task 1</li>
+  <li>Task 2</li>
+  <li>Task 3</li>
+  </div>
+
+
+ 
+
+
+
+</body>
+<style>
+    .temp button:hover {
+        background-color: red;
+    }
+
+    .completed {
+        background-color: lightgreen;
+    }
+
+
+
+
+
+    .temp {
+        margin: 0 auto;
+        width: 300px;
+        border: 2px solid black;
+        padding: 10px;
+        background-color: goldenrod;
+        margin-top: 5%;
+        text-align: center;
+
+    }
+</style>
+</head>
+
+</html>
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+
+        // Add new task
+
+
+        $("#addBtn").click(function () {
+
+
+            let taskText =
+                $("#taskInput").val();
+
+
+            if (taskText.trim() !== "") {
+
+
+                $("#taskList").append(
+
+
+                    `<li>${taskText}
+
+
+               <button
+class="completeBtn">Complete</button>
+
+
+               <button
+class="deleteBtn">Delete</button>
+
+
+             </li>`
+
+
+                );
+
+
+
+                $("#taskInput").val(""); // clear input
+
+
+            } else {
+
+
+                alert("please enter a task!");
+
+
+        }
+
+
+        });
+
+
+
+
+
+        // Mark as complete
+
+
+        $(document).on("click",
+            ".completeBtn", function () {
+
+
+
+                $(this).parent().toggleClass("done");
+
+
+            });
+
+
+
+
+
+        // Delete task
+
+
+        $(document).on("click", ".deleteBtn",
+            function () {
+
+
+                $(this).parent().remove();
+
+
+            });
+
+
+    });
+
+
+</script>
